@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutMe from './components /AboutMe';
+import Footer from './components /Footer';
+import Header from './components /Header';
+import Projects from "./components /Projects";
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setTheme("dark")
+    } else {
+      setTheme("light")
+    }
+  }, []);
+
+  useEffect(() => {
+    if(theme === "dark"){
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+  }, [theme]);
+
+  const handleSwitchTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='dark:bg-slate-900'>
+      <Header handleSwitchTheme={handleSwitchTheme}/>
+      <AboutMe/>
+      <Projects/>
+      <Footer/>
     </div>
   );
 }

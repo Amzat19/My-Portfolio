@@ -1,3 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+   .lightmodeborder::after {
+    display: block;
+    content: "";
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+  .darkmodeborder::after {
+    display: block;
+    content: "";
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .lightmodeborder:hover:after {
+    transform: scaleX(1);
+  }
+  .darkmodeborder:hover:after {
+    transform: scaleX(1);
+  }
+
+  .lightmodeborder:hover {
+    color: gray;
+  }
+
+  .button-darkbg {
+    background-color : black;
+  }
+  .border-gradient-mail {
+    background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(#33D2FF, #9845E8) border-box;
+  }
+  .darkmode-border-gradient-mail {
+    background: linear-gradient(black, black) padding-box,
+              linear-gradient(#33D2FF, #9845E8) border-box;
+  }
+  .border-gradient-linkedin {
+    background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(#9845E8, #DD5789) border-box;
+  }
+  .darkmode-border-gradient-linkedin {
+    background: linear-gradient(black, black) padding-box,
+              linear-gradient(#9845E8, #DD5789) border-box;
+  }
+  .border-gradient-github {
+    background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(#FBF2B1, #F4426C) border-box;
+  }
+  .darkmode-border-gradient-github {
+    background: linear-gradient(black, black) padding-box,
+              linear-gradient(#FBF2B1, #F4426C) border-box;
+  }
+  .fill > path {
+    fill: white;
+  }
+  .close > path {
+    stroke: black;
+  }
+  .darkmodeclose > path {
+    stroke: white;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
