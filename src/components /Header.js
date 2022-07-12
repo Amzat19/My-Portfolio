@@ -8,7 +8,7 @@ const NavBar = ({ navState, toggleNav, scrollToSection, handleSwitchTheme }) => 
   return (
     <div className={navState ? 'bg-[rgba(0,0,0,0.8)] w-[100vw] h-[100vh] top-0 left-0 fixed' : 'left-[100%] hidden'}>
       <nav className="w-[50vw] h-[100vh] bg-white relative dark:bg-slate-900">
-        <img src={logo} alt='Portfolio logo' width={'100px'}/>
+      <span className="bg-gradient-to-r from-[#9845E8] via-[#33D2FF] to-[#DD5789] bg-clip-text text-transparent text-[80px] px-2 font-Bangers">AS</span>
         <Close className="top-[20px] right-[20px] h-[20px] w-[20px] absolute close dark:darkmodeclose" onClick={toggleNav}/>
         <ul className="pl-4 pt-4 font-medium">
           <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder" onClick={(e) => {scrollToSection(e, "/#projects"); toggleNav();}}>Projects</li>
@@ -37,15 +37,14 @@ const Header = ({ handleSwitchTheme }) => {
   }
 
     return (
-
       <>
         <header className='w-[80vw] m-auto h-20 dark:text-white'>
           <nav className='flex w-[80vw] justify-between h-28'>
-            <div>
-              <img src={logo} alt="My Portfolio Logo" width={'100px'} height={'100px'}/>
+            <div className="w-32">
+              <span className="bg-gradient-to-r from-[#9845E8] via-[#33D2FF] to-[#DD5789] bg-clip-text text-transparent text-[80px] px-2 font-Bangers">AS</span>
             </div>
             <div className="">
-              <Menu className="md:hidden mt-6 dark:darkmodeclose" onClick={toggleNav}/>
+              <Menu className="md:hidden mt-12 dark:darkmodeclose" onClick={toggleNav}/>
               <NavBar navState={navState} toggleNav={toggleNav} scrollToSection={scrollToSection} handleSwitchTheme={handleSwitchTheme}/>
               <ul className='md:flex gap-4 pt-6 font-medium hidden '>
                 <li className="lightmodeborder dark:darkmodeborder" onClick={(e) => scrollToSection(e, "/#projects")}>Projects</li>
@@ -58,7 +57,6 @@ const Header = ({ handleSwitchTheme }) => {
             </div>
           </nav>
         </header>
-
       </>
     )
 };

@@ -22,7 +22,7 @@
         "img": "/TipCalc.jpeg",
         "projectName": "TIP CALCULATOR",
         "description": "A tip calculator.",
-        "tags": ["React"],
+        "tags": ["React -", " Styled Components"],
         "link": "https://tiny-paletas-8ff1fa.netlify.app"
     },
     

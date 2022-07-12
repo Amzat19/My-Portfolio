@@ -5,12 +5,12 @@ const Projects = () => {
     return (
         <section id="projects" className='border-t-2 mt-12 w-[80vw] m-auto mb-12 dark:text-white'>
             <h1 className='mt-4 font-medium text-2xl mb-12'>My Projects</h1>
-            <div className='flex flex-wrap gap-12 w-'>
+            <div className='flex flex-wrap gap-12'>
             {
                 projectsData && projectsData.map((projects, index) => {
                     return (
                         <article key={index} className='shadow-xl w-fit'>
-                            <div>
+                            <div className="h-[412px]">
                                 <figure className='w-fit'>
                                     <img src={require('../assets' + projects.img)} alt="E-commerce Product Page Snapshot" className='w-80 md:w-96 h-52 shadow-md'/>
                                 </figure>
@@ -26,7 +26,7 @@ const Projects = () => {
                                     }
                                 </div>
                             </div>
-                            <div className="pl-2 mb-0">
+                            <div className="py-4 pl-2">
                                 <a href={projects.link}>
                                     <button key={index} className='flex gap-2 border-2 border-gradient-mail border-transparent rounded-md px-4 py-2 text-lg dark:darkmode-border-gradient-mail'>
                                         <View className='mt-1 dark:fill'/> View live site
