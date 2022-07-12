@@ -1,4 +1,3 @@
-import logo from "../assets/portfolio-logo.jpg";
 import { ReactComponent as Mode} from "../assets/mode-switch-logo.svg";
 import { ReactComponent as Menu} from "../assets/hamburger.svg";
 import { ReactComponent as Close } from "../assets/close-button.svg";
