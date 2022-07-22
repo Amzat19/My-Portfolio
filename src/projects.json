@@ -42,5 +42,14 @@
         "description": "A web page showing job listing with filter functionalities using job tags.",
         "tags": ["React -", "TailwindCSS"],
         "link": " https://gilded-lamington-b63983.netlify.app"
+    },
+
+    {
+        "id": 6,
+        "img": "/rest-api.png",
+        "projectName": "Countries API",
+        "description": "A web page showing list countries from a REST API with filter and search functionalities.",
+        "tags": ["Next -", "TailwindCSS -", " REST API"],
+        "link": " https://countryy.netlify.app"
     }
 ]
