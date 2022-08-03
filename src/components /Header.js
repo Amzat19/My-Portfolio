@@ -47,7 +47,7 @@ const Header = ({ handleSwitchTheme }) => {
               <NavBar navState={navState} toggleNav={toggleNav} scrollToSection={scrollToSection} handleSwitchTheme={handleSwitchTheme}/>
               <ul className='md:flex gap-4 pt-6 font-medium hidden '>
                 <li className="lightmodeborder dark:darkmodeborder" onClick={(e) => scrollToSection(e, "/#projects")}>Projects</li>
-                <li className="lightmodeborder dark:darkmodeborder" ><a href="https://drive.google.com/file/d/13s_O__a8DIqxdtVq67sybbamZgTJgrwb/view?usp=sharing">Resume</a></li>
+                <li className="lightmodeborder dark:darkmodeborder" ><a href="https://drive.google.com/file/d/1EP4aKRyCCm3IoRwq40fOfk6Lmhk6Pc2O/view?usp=sharing">Resume</a></li>
                 <li className="lightmodeborder dark:darkmodeborder" onClick={(e) => scrollToSection(e, "/#contact")}>Contact</li>
                 <li className="lightmodeborder dark:darkmodeborder">
                   <Mode onClick={handleSwitchTheme} className='dark:fill'/>

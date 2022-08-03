@@ -4,7 +4,7 @@
         "img": "/E-commerce-page.jpeg",
         "projectName": "E-Commerce Product Page",
         "description": "A product page with a light box product gallery and cart functionalities. Built following mobile-first workflow principles.",
-        "tags": ["React -", " Styled Components"],
+        "tags": ["React -", " JavaScript -", " Styled Components"],
         "link": "https://fastidious-mochi-d83db0.netlify.app/"
     },
 
@@ -13,7 +13,7 @@
         "img": "/Gpcalc.jpeg",
         "projectName": "GPA CALCULATOR",
         "description": "A calculator for calculating your GPA with an added feature of grouping by semesters.",
-        "tags": ["React -", "BulmaCSS"],
+        "tags": ["React -", " JavaScript -", "BulmaCSS"],
         "link": "https://effervescent-nougat-179712.netlify.app"
     },
 
@@ -22,7 +22,7 @@
         "img": "/TipCalc.jpeg",
         "projectName": "TIP CALCULATOR",
         "description": "A tip calculator.",
-        "tags": ["React -", " Styled Components"],
+        "tags": ["React -", " JavaScript -", " Styled Components"],
         "link": "https://tiny-paletas-8ff1fa.netlify.app"
     },
     
@@ -31,7 +31,7 @@
         "img": "/FE-Task.jpeg",
         "projectName": "FRONTEND ENGINEER TASK",
         "description": "A mobile and desktop responsive web page showing a company's data.",
-        "tags": ["React -", " Styled Components"],
+        "tags": ["React -", " JavaScript -", " Styled Components"],
         "link": "https://magnificent-beignet-d0b5dc.netlify.app"
     },
 
@@ -40,7 +40,7 @@
         "img": "/job-filter.jpeg",
         "projectName": "Job Filter Hub",
         "description": "A web page showing job listing with filter functionalities using job tags.",
-        "tags": ["React -", "TailwindCSS"],
+        "tags": ["React -", " JavaScript -", "TailwindCSS"],
         "link": " https://gilded-lamington-b63983.netlify.app"
     },
 
@@ -49,7 +49,16 @@
         "img": "/rest-api.png",
         "projectName": "Countries API",
         "description": "A web page showing list countries from a REST API with filter and search functionalities.",
-        "tags": ["Next -", "TailwindCSS -", " REST API"],
+        "tags": ["Next -", " JavaScript -", "TailwindCSS -", " REST API"],
         "link": " https://countryy.netlify.app"
+    },
+
+    {
+        "id": 7,
+        "img": "/todo-app.png",
+        "projectName": "Todo List App",
+        "description": "A Todo List App where you can set a todo, check the box if it is completed, visualize your active and completed todos, and drag and drop to reorder.",
+        "tags": ["Next -", " JavaScript -", " Styled Components -"],
+        "link": " https://todo-li-app.netlify.app"
     }
 ]
