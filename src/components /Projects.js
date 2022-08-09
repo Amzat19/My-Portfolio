@@ -10,13 +10,13 @@ const Projects = () => {
                 projectsData && projectsData.map((projects, index) => {
                     return (
                         <article key={index} className='shadow-xl w-fit'>
-                            <div className="h-[412px]">
+                            <div className="">
                                 <figure className='w-fit'>
                                     <img src={require('../assets' + projects.img)} alt="E-commerce Product Page Snapshot" className='w-80 md:w-96 h-52 shadow-md'/>
                                 </figure>
                                 <h2 className='font-medium uppercase mt-8 text-lg w-[312px] md:w-[376px] ml-2'>{projects.projectName}</h2>
-                                <p className='my-6 w-[312px] md:w-[376px] ml-2'>{projects.description}</p>
-                                <div className='w-[312px] md:w-[376px] pb-6 ml-2'>
+                                <p className='my-2 w-[312px] md:w-[376px] ml-2'>{projects.description}</p>
+                                <div className='w-[312px] md:w-[376px] ml-2'>
                                     {
                                         projects.tags.map((tag, index) => {
                                             return (
