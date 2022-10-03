@@ -11,7 +11,7 @@ const NavBar = ({ navState, toggleNav, scrollToSection }) => {
         <Close className="top-[20px] right-[20px] h-[20px] w-[20px] absolute close dark:darkmodeclose" onClick={toggleNav}/>
         <ul className="pl-4 pt-4 font-medium">
           <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder" onClick={(e) => {scrollToSection(e, "/#projects"); toggleNav();}}>Projects</li>
-          <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder"><a href="https://drive.google.com/file/d/1EP4aKRyCCm3IoRwq40fOfk6Lmhk6Pc2O/view?usp=sharing">Resume</a></li>
+          <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder"><a href="https://docs.google.com/document/d/1itQntWG5Mx_64_Uq35jFjoZUv0x3m3-FI4VN9owmMKQ/edit?usp=sharing">Resume</a></li>
           <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder" onClick={(e) => {scrollToSection(e, "/#contact"); toggleNav();}}>Contact</li>
         </ul>
       </nav>
@@ -49,7 +49,7 @@ const Header = ({ handleSwitchTheme }) => {
               <NavBar navState={navState} toggleNav={toggleNav} scrollToSection={scrollToSection} handleSwitchTheme={handleSwitchTheme}/>
               <ul className='md:flex gap-4 pt-6 font-medium hidden '>
                 <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" onClick={(e) => scrollToSection(e, "/#projects")}>Projects</li>
-                <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" ><a href="https://drive.google.com/file/d/1EP4aKRyCCm3IoRwq40fOfk6Lmhk6Pc2O/view?usp=sharing">Resume</a></li>
+                <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" ><a href="https://docs.google.com/document/d/1itQntWG5Mx_64_Uq35jFjoZUv0x3m3-FI4VN9owmMKQ/edit?usp=sharing">Resume</a></li>
                 <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" onClick={(e) => scrollToSection(e, "/#contact")}>Contact</li>
                 <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer">
                   <Mode onClick={handleSwitchTheme} className='dark:fill'/>
