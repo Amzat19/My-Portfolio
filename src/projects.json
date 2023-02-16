@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "/E-commerce-page.jpeg",
+        "img": "./assets/E-commerce-page.jpeg",
         "projectName": "E-Commerce Product Page",
         "description": "A product page with a light box product gallery and cart functionalities. Built following mobile-first workflow principles.",
         "tags": [
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "img": "/Gpcalc.jpeg",
+        "img": "./assets/Gpcalc.jpeg",
         "projectName": "GPA CALCULATOR",
         "description": "A calculator for calculating your GPA with an added feature of calculating different GPA and grouping by semesters.",
         "tags": [
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "img": "/TipCalc.jpeg",
+        "img": "./assets/TipCalc.jpeg",
         "projectName": "TIP CALCULATOR",
         "description": "A tip calculator for calculating tips based on the number of people, percent to share and total amount.",
         "tags": [
@@ -37,8 +37,8 @@
     },
     {
         "id": 4,
-        "img": "/FE-Task.jpeg",
-        "projectName": "FRONTEND ENGINEER TASK",
+        "img": "./assets/FE-Task.jpeg",
+        "projectName": "COMPANY WEBPAGE",
         "description": "A mobile and desktop responsive web page showing a company's data. Built to be very responsive for any viewport.",
         "tags": [
             "React -",
@@ -49,7 +49,7 @@
     },
     {
         "id": 5,
-        "img": "/job-filter.jpeg",
+        "img": "./assets/job-filter.jpeg",
         "projectName": "Job Filter Hub",
         "description": "A web page showing job listing with filter functionalities using job tags.",
         "tags": [
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "img": "/rest-api.png",
+        "img": "./assets/rest-api.png",
         "projectName": "Countries API",
         "description": "A web page showing list countries from a REST API with filter and search functionalities.",
         "tags": [
@@ -74,7 +74,7 @@
     },
     {
         "id": 7,
-        "img": "/todo-app.png",
+        "img": "./assets/todo-app.png",
         "projectName": "Todo List App",
         "description": "A Todo List App where you can set a todo, check the box if it is completed, visualize your active and completed todos, and drag and drop to reorder.",
         "tags": [
@@ -86,7 +86,7 @@
     },
     {
         "id": 8,
-        "img": "/forum-app.png",
+        "img": "./assets/forum-app.png",
         "projectName": "My Forum Application",
         "description": "Create an account and discuss on any thread category of your choice with my Forum Application. View latest and trending threads.",
         "tags": [
