@@ -99,5 +99,17 @@
             "GraphQL API"
         ],
         "link": "http://54.84.221.246"
+    },
+    {
+        "id": 9,
+        "img": "./assets/ip-tracker.png",
+        "projectName": "IP Address Tracker",
+        "description": "An IP tracker that uses the input IP Address you provide to get the location, city and isp of the IP Address with an added functionality of its location on the map.",
+        "tags": [
+            "React -",
+            "TailwindCSS -",
+            "REST API"
+        ],
+        "link": "https://trackingip-address.netlify.app"
     }
 ]
