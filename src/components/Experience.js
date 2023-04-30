@@ -3,6 +3,7 @@ import biking from "../assets/biking.jpg"
 import reading from "../assets/reading.jpg"
 import scai from "../assets/scai.jpg"
 import hng from "../assets/hng.png"
+import pentria from "../assets/pentria.jpg"
 
 const Experience = () => {
   return (
@@ -42,6 +43,14 @@ const Experience = () => {
       <div className="sm:w-[500px] sm:self-start ">
         <article className="bg-[#FFFFFF] dark:bg-slate-800 rounded-xl p-8 mt-8 shadow-lg sm:mt-0">
           <h2 className="text-[#4F4F4F] dark:text-[#FFFFFF] uppercase font-bold">Experiences</h2>
+          <div className="flex gap-4 mt-4">
+            <img src={pentria} alt="hng internship logo" className="w-2/6 h-4/6 self-center" />
+            <div className="self-center">
+              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">Jan 2023 - Present</p>
+              <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">FrontEnd Developer</p>
+            </div>
+          </div>
+          <p className="text-[#828282] dark:text-[#FFFFFF] my-4">Collaborated with a team of designers and developers to create a user-friendly interface and seamless client to server interactions for an event booking application.</p>
           <div className="flex gap-4 mt-4">
             <img src={hng} alt="hng internship logo" className="w-2/6 h-4/5" />
             <div className="self-center">
