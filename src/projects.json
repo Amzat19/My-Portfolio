@@ -111,5 +111,19 @@
             "REST API"
         ],
         "link": "https://trackingip-address.netlify.app"
+    },
+    {
+        "id": 10,
+        "img": "./assets/pentria-web.jpg",
+        "projectName": "Event Booking Application",
+        "description": "The event booking app simplifies event management and ticket purchasing. Users can browse events and securely book tickets. Organizers can create events, set prices, and track registrations. It provides real-time updates and enhances the event-going experience.",
+        "tags": [
+            "React -",
+            "TailwindCSS -",
+            "SCSS -",
+            "GraphQL API-",
+            "Redux"
+        ],
+        "link": "https://pentria.app"
     }
 ]

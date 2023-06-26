@@ -4,6 +4,7 @@ import reading from "../assets/reading.jpg"
 import scai from "../assets/scai.jpg"
 import hng from "../assets/hng.png"
 import pentria from "../assets/pentria.jpg"
+import pharmalink from "../assets/pharmalink.png"
 
 const Experience = () => {
   return (
@@ -44,9 +45,17 @@ const Experience = () => {
         <article className="bg-[#FFFFFF] dark:bg-slate-800 rounded-xl p-8 mt-8 shadow-lg sm:mt-0">
           <h2 className="text-[#4F4F4F] dark:text-[#FFFFFF] uppercase font-bold">Experiences</h2>
           <div className="flex gap-4 mt-4">
+            <img src={pharmalink} alt="pharmalink logo" className="w-2/6 h-4/6 self-center" />
+            <div className="self-center">
+              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">Mar 2023 - Present</p>
+              <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">FrontEnd Engineer</p>
+            </div>
+          </div>
+          <p className="text-[#828282] dark:text-[#FFFFFF] my-4">Collaborated with cross-functional teams to design and develop intuitive and visually appealing desktop interfaces that enhance patient engagement and improve healthcare outcomes.</p>
+          <div className="flex gap-4 mt-4">
             <img src={pentria} alt="hng internship logo" className="w-2/6 h-4/6 self-center" />
             <div className="self-center">
-              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">Jan 2023 - Present</p>
+              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">Jan 2023 - Mar 2023</p>
               <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">FrontEnd Developer</p>
             </div>
           </div>
@@ -58,7 +67,7 @@ const Experience = () => {
               <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">FrontEnd Developer Intern</p>
             </div>
           </div>
-          <p className="text-[#828282] dark:text-[#FFFFFF] my-4">Worked with a team to build an application from scratch and push out an MVP.</p>
+          <p className="text-[#828282] dark:text-[#FFFFFF] my-4">Contributed to build an hangout scheduling platform. I collaborated with the team to implement features, optimize performance, and resolve frontend issues.</p>
           <div className="flex gap-4">
             <img src={scai} alt="Smart Finance Logo" className="w-2/5 h-4/5" />
             <div className="self-center">

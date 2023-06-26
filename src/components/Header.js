@@ -11,7 +11,7 @@ const NavBar = ({ navState, toggleNav, scrollToSection }) => {
         <Close className="top-[20px] right-[20px] h-[20px] w-[20px] absolute close dark:darkmodeclose" onClick={toggleNav} />
         <ul className="pl-4 pt-4 font-medium">
           <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder" onClick={(e) => { scrollToSection(e, "/#projects"); toggleNav(); }}>Projects</li>
-          <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder"><a href="https://drive.google.com/file/d/18Mk-_X8ol34LytAzs3VSpORPrT3xHxJl/view?usp=share_link">Resume</a></li>
+          <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder"><a href="https://drive.google.com/file/d/1L1MY4lQPLMWU-WXJCxJeG_nVHIf16Kk0/view?usp=drive_link">Resume</a></li>
           <li className="w-[70px] mb-3 lightmodeborder dark:darkmodeborder" onClick={(e) => { scrollToSection(e, "/#contact"); toggleNav(); }}>Contact</li>
         </ul>
       </nav>
@@ -48,7 +48,7 @@ const Header = ({ handleSwitchTheme }) => {
             </div>
             <ul className='md:flex gap-4 pt-6 font-medium hidden '>
               <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" onClick={(e) => scrollToSection(e, "/#projects")}>Projects</li>
-              <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" ><a href="https://drive.google.com/file/d/18Mk-_X8ol34LytAzs3VSpORPrT3xHxJl/view?usp=share_link">Resume</a></li>
+              <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" ><a href="https://drive.google.com/file/d/1L1MY4lQPLMWU-WXJCxJeG_nVHIf16Kk0/view?usp=drive_link">Resume</a></li>
               <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer" onClick={(e) => scrollToSection(e, "/#contact")}>Contact</li>
               <li className="lightmodeborder dark:darkmodeborder hover:cursor-pointer">
                 <Mode onClick={handleSwitchTheme} className='dark:fill' />
