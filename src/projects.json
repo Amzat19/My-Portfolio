@@ -125,5 +125,16 @@
             "Redux"
         ],
         "link": "https://pentria.app"
+    },
+    {
+        "id": 11,
+        "img": "./assets/devjobs.jpg",
+        "projectName": "Developer Jobs",
+        "description": "A central hub where Job seekers can explore a wide range of developer positions, filter and search based on their skills and preferences, and apply directly through the platform",
+        "tags": [
+            "Vue -",
+            "TailwindCSS"
+        ],
+        "link": "https://devjobsv-1.netlify.app/"
     }
 ]
