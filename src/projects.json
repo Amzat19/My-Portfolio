@@ -1,18 +1,6 @@
 [
     {
         "id": 1,
-        "img": "./assets/E-commerce-page.jpeg",
-        "projectName": "E-Commerce Product Page",
-        "description": "A product page with a light box product gallery and cart functionalities. Built following mobile-first workflow principles.",
-        "tags": [
-            "React -",
-            " JavaScript -",
-            " Styled Components"
-        ],
-        "link": "https://fastidious-mochi-d83db0.netlify.app/"
-    },
-    {
-        "id": 2,
         "img": "./assets/Gpcalc.jpeg",
         "projectName": "GPA CALCULATOR",
         "description": "A calculator for calculating your GPA with an added feature of calculating different GPA and grouping by semesters.",
@@ -24,7 +12,7 @@
         "link": "https://gpcalc1.netlify.app/"
     },
     {
-        "id": 3,
+        "id": 2,
         "img": "./assets/TipCalc.jpeg",
         "projectName": "TIP CALCULATOR",
         "description": "A tip calculator for calculating tips based on the number of people, percent to share and total amount.",
@@ -36,19 +24,7 @@
         "link": "https://tiny-paletas-8ff1fa.netlify.app"
     },
     {
-        "id": 4,
-        "img": "./assets/FE-Task.jpeg",
-        "projectName": "COMPANY WEBPAGE",
-        "description": "A mobile and desktop responsive web page showing a company's data. Built to be very responsive for any viewport.",
-        "tags": [
-            "React -",
-            " JavaScript -",
-            " Styled Components"
-        ],
-        "link": "https://magnificent-beignet-d0b5dc.netlify.app"
-    },
-    {
-        "id": 5,
+        "id": 3,
         "img": "./assets/job-filter.jpeg",
         "projectName": "Job Filter Hub",
         "description": "A web page showing job listing with filter functionalities using job tags.",
@@ -60,7 +36,7 @@
         "link": " https://gilded-lamington-b63983.netlify.app"
     },
     {
-        "id": 6,
+        "id": 4,
         "img": "./assets/rest-api.png",
         "projectName": "Countries API",
         "description": "A web page showing list countries from a REST API with filter and search functionalities.",
@@ -73,7 +49,7 @@
         "link": " https://countryy.netlify.app"
     },
     {
-        "id": 7,
+        "id": 5,
         "img": "./assets/todo-app.png",
         "projectName": "Todo List App",
         "description": "A Todo List App where you can set a todo, check the box if it is completed, visualize your active and completed todos, and drag and drop to reorder.",
@@ -85,7 +61,7 @@
         "link": " https://todo-li-app.netlify.app"
     },
     {
-        "id": 8,
+        "id": 6,
         "img": "./assets/forum-app.png",
         "projectName": "My Forum Application",
         "description": "Create an account and discuss on any thread category of your choice with my Forum Application. View latest and trending threads.",
@@ -101,7 +77,7 @@
         "link": "http://54.84.221.246"
     },
     {
-        "id": 9,
+        "id": 7,
         "img": "./assets/ip-tracker.png",
         "projectName": "IP Address Tracker",
         "description": "An IP tracker that uses the input IP Address you provide to get the location, city and isp of the IP Address with an added functionality of its location on the map.",
@@ -113,7 +89,7 @@
         "link": "https://trackingip-address.netlify.app"
     },
     {
-        "id": 10,
+        "id": 8,
         "img": "./assets/pentria-web.jpg",
         "projectName": "Event Booking Application",
         "description": "The event booking app simplifies event management and ticket purchasing. Users can browse events and securely book tickets. Organizers can create events, set prices, and track registrations. It provides real-time updates and enhances the event-going experience.",
@@ -127,14 +103,41 @@
         "link": "https://pentria.app"
     },
     {
-        "id": 11,
+        "id": 9,
+        "img": "./assets/catchup.png",
+        "projectName": "Hangout Scheduling Application",
+        "description": "This application enables users to plan and organize social gatherings, meetups, or events with friends, family, or colleagues. Users can create event invitations, set dates, times, and locations, and send them to participants. The platform may also provide features like event reminders to facilitate seamless coordination and communication.",
+        "tags": [
+            "React -",
+            "TailwindCSS -",
+            "SCSS -",
+            "REST API -",
+            "Redux"
+        ],
+        "link": "https://catchup.rsvp"
+    },
+    {
+        "id": 10,
         "img": "./assets/devjobs.jpg",
         "projectName": "Developer Jobs",
         "description": "A central hub where Job seekers can explore a wide range of developer positions, filter and search based on their skills and preferences, and apply directly through the platform",
         "tags": [
             "Vue -",
-            "TailwindCSS"
+            "TailwindCSS",
+            " JavaScript"
         ],
         "link": "https://devjobsv-1.netlify.app/"
+    },
+    {
+        "id": 11,
+        "img": "./assets/product-feedback.png",
+        "projectName": "Product Feedback",
+        "description": "A product feedback application allows users to provide valuable insights and suggestions about a product or service. Users can submit feedback, report bugs, and request new features through the platform. It also gives the users features like Roadmap Tracking to show which suggestions are being worked on or pushed live.",
+        "tags": [
+            "Vue -",
+            "TailwindCSS",
+            " JavaScript"
+        ],
+        "link": "https://product-app19.netlify.app/"
     }
 ]
