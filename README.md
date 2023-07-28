@@ -1,7 +1,4 @@
-
 # My Portfolio
-
-[View Live Site - https://amzat-portfolio.netlify.app](https://amzat-portfolio.netlify.app/)
 
 ## Overview
 
@@ -9,7 +6,7 @@ Welcome to my portfolio! This is a showcase of my projects and skills as a front
 
 ## Live Demo
 
-Check out the live demo [here](https://www.example.com).
+Check out the live demo [here](https://amzat-portfolio.netlify.app/).
 
 ## Features
 
