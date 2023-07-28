@@ -1,8 +1,7 @@
-View Live Site - 
 
 # My Portfolio
 
-![View Live Site - ](https://amzat-portfolio.netlify.app/)
+[View Live Site - https://amzat-portfolio.netlify.app](https://amzat-portfolio.netlify.app/)
 
 ## Overview
 
