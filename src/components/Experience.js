@@ -14,10 +14,13 @@ const Experience = () => {
           <h2 className="text-[#4F4F4F] dark:text-[#FFFFFF] font-bold text-lg uppercase mb-2">Front end Skills</h2>
           <ul className="text-[#4F4F4F] dark:text-[#FFFFFF] font-semibold text-sm">
             <li>React</li>
+            <li>Vue</li>
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>TailwindCSS</li>
+            <li>Styled Component</li>
             <li>Redux</li>
+            <li>VueX</li>
             <li>GraphQL</li>
             <li>NodeJS</li>
           </ul>
