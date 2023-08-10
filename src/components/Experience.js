@@ -20,6 +20,8 @@ const Experience = () => {
             <li>TypeScript</li>
             <li>TailwindCSS</li>
             <li>Styled Component</li>
+            <li>BootStrap</li>
+            <li>Sass</li>
             <li>Redux</li>
             <li>VueX</li>
             <li>GraphQL</li>
@@ -51,7 +53,7 @@ const Experience = () => {
           <div className="flex gap-4 mt-4">
             <img src={pharmalink} alt="pharmalink logo" className="w-2/6 h-4/6 self-center" />
             <div className="self-center">
-              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">Mar 2023 - Present</p>
+              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">April 2023 - Present</p>
               <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">FrontEnd Engineer</p>
             </div>
           </div>

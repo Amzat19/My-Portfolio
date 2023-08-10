@@ -16,7 +16,7 @@ const Projects = () => {
                 <img src={require(`${projects.img}`)} className="w-4/5 h-40 mx-auto rounded-xl mb-2" alt="projects demo" />
                 <h2 className="text-[#333333] dark:text-[#FFFFFF] font-semibold text-xl mt-4">{projects.projectName}</h2>
                 <p className="text-[#828282] dark:text-[#FFFFFF] mt-4 mb-16">{projects.description}</p>
-                <a href={projects.link} className="absolute bottom-8 pt-8">
+                <a rel="noreferrer" target="_blank" href={projects.link} className="absolute bottom-8 pt-8">
                   <button key={index} className='flex gap-2 border-2 border-gradient-mail border-transparent rounded-xl px-4 py-2 dark:darkmode-border-gradient-mail dark:text-[#FFFFFF]'>
                     <View className='mt-1 dark:fill' /> Live
                   </button>
