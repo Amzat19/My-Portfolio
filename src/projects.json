@@ -24,18 +24,6 @@
         "link": "https://tiny-paletas-8ff1fa.netlify.app"
     },
     {
-        "id": 3,
-        "img": "./assets/job-filter.jpeg",
-        "projectName": "Job Filter Hub",
-        "description": "A web page showing job listing with filter functionalities using job tags.",
-        "tags": [
-            "React -",
-            " JavaScript -",
-            "TailwindCSS"
-        ],
-        "link": " https://gilded-lamington-b63983.netlify.app"
-    },
-    {
         "id": 4,
         "img": "./assets/rest-api.png",
         "projectName": "Countries API",
@@ -47,18 +35,6 @@
             " REST API"
         ],
         "link": " https://countryy.netlify.app"
-    },
-    {
-        "id": 5,
-        "img": "./assets/todo-app.png",
-        "projectName": "Todo List App",
-        "description": "A Todo List App where you can set a todo, check the box if it is completed, visualize your active and completed todos, and drag and drop to reorder.",
-        "tags": [
-            "Next -",
-            " JavaScript -",
-            " Styled Components -"
-        ],
-        "link": " https://todo-li-app.netlify.app"
     },
     {
         "id": 6,
@@ -139,5 +115,18 @@
             " JavaScript"
         ],
         "link": "https://product-app19.netlify.app/"
+    },
+    {
+        "id": 12,
+        "img": "./assets/task-mgmt.png",
+        "projectName": "Task Management Application",
+        "description": "This is a simulation of a task management website designed to help individuals, teams, and organizations effectively organize, track, prioritize, and collaborate on various tasks, projects, and activities. It serves as a digital hub where users can create, manage, and monitor tasks and projects.",
+        "tags": [
+            "Next -",
+            "TailwindCSS -",
+            " TypeScript -",
+            "Redux"
+        ],
+        "link": "https://task-mgmt1.netlify.app/"
     }
 ]

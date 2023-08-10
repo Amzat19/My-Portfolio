@@ -15,6 +15,7 @@ const Experience = () => {
           <ul className="text-[#4F4F4F] dark:text-[#FFFFFF] font-semibold text-sm">
             <li>React</li>
             <li>Vue</li>
+            <li>Next JS</li>
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>TailwindCSS</li>
