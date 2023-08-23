@@ -37,22 +37,6 @@
         "link": " https://countryy.netlify.app"
     },
     {
-        "id": 6,
-        "img": "./assets/forum-app.png",
-        "projectName": "My Forum Application",
-        "description": "Create an account and discuss on any thread category of your choice with my Forum Application. View latest and trending threads.",
-        "tags": [
-            "React -",
-            " TypeScript -",
-            "Redux -",
-            "CSS -",
-            "NodeJS -",
-            "PostresQL -",
-            "GraphQL API"
-        ],
-        "link": "http://54.84.221.246"
-    },
-    {
         "id": 7,
         "img": "./assets/ip-tracker.png",
         "projectName": "IP Address Tracker",
