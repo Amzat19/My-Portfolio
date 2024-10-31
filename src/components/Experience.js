@@ -4,7 +4,7 @@ import reading from "../assets/reading.jpg";
 import scai from "../assets/scai.jpg";
 import hng from "../assets/hng.png";
 import pentria from "../assets/pentria.jpg";
-import pharmalink from "../assets/pharmalink.png";
+import pharmalink from "../assets/all-of-health-logo.png";
 import blucera from "../assets/blucera.png";
 
 const Experience = () => {
@@ -103,7 +103,7 @@ const Experience = () => {
             />
             <div className="self-center">
               <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">
-                April 2023 - Present
+                April 2023 - October 2024
               </p>
               <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">
                 FrontEnd Engineer
