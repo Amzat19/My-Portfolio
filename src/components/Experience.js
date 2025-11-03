@@ -23,6 +23,7 @@ const Experience = () => {
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>WordPress</li>
+            <li>WooCommerce</li>
             <li>TailwindCSS</li>
             <li>Styled Component</li>
             <li>BootStrap</li>
