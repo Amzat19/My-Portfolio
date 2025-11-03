@@ -6,6 +6,7 @@ import hng from "../assets/hng.png";
 import pentria from "../assets/pentria.jpg";
 import pharmalink from "../assets/all-of-health-logo.png";
 import blucera from "../assets/blucera.png";
+import thegigs from "../assets/thegigs.svg";
 
 const Experience = () => {
   return (
@@ -21,6 +22,7 @@ const Experience = () => {
             <li>Next JS</li>
             <li>JavaScript</li>
             <li>TypeScript</li>
+            <li>WordPress</li>
             <li>TailwindCSS</li>
             <li>Styled Component</li>
             <li>BootStrap</li>
@@ -76,13 +78,33 @@ const Experience = () => {
           </h2>
           <div className="flex gap-4 mt-4">
             <img
+              src={thegigs}
+              alt="the gigs logo"
+              className="w-2/6 h-4/6 self-center"
+            />
+            <div className="self-center">
+              <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">
+                March 2025 - Present
+              </p>
+              <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">
+                FrontEnd Engineer
+              </p>
+            </div>
+          </div>
+          <p className="text-[#828282] dark:text-[#FFFFFF] my-4">
+            Building out features for an all purpose digital marketplace where
+            you can connect people with work, products, and spaces in one
+            platform.
+          </p>
+          <div className="flex gap-4 mt-4">
+            <img
               src={blucera}
               alt="pharmalink logo"
               className="w-2/6 h-4/6 self-center"
             />
             <div className="self-center">
               <p className="text-[#828282] dark:text-[#FFFFFF] text-sm mb-2">
-                October 2023 - Present
+                October 2023 - February 2025
               </p>
               <p className="text-[#333333] dark:text-[#FFFFFF] font-semibold mb-2">
                 FrontEnd Engineer

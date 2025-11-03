@@ -34,7 +34,7 @@ const NavBar = ({ navState, toggleNav, scrollToSection }) => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/11k0aQZnHyj_e3QGWnkihgNhO5RiyFah_/view?usp=sharing"
+              href="https://drive.google.com/file/d/1bA-kj3hpJQnIoJED2fzqdLmFWsRCuFnf/view?usp=drivesdk"
             >
               Resume
             </a>
@@ -102,7 +102,7 @@ const Header = ({ handleSwitchTheme }) => {
                 <a
                   rel="noreferrer"
                   target="_blank"
-                  href="https://drive.google.com/file/d/11k0aQZnHyj_e3QGWnkihgNhO5RiyFah_/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1bA-kj3hpJQnIoJED2fzqdLmFWsRCuFnf/view?usp=drivesdk"
                 >
                   Resume
                 </a>
