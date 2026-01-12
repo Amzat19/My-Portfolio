@@ -9,9 +9,9 @@ const AboutMe = ({ theme }) => {
   return (
     <article
       id="contact"
-      className="mx-auto pb-6 bg-[#FFFFFF] dark:bg-slate-800 rounded-xl shadow-lg md:flex md:justify-between w-[80vw] dark:text-[#FFFFFF]"
+      className="mx-auto pb-6 lg:pb-0 bg-[#FFFFFF] dark:bg-slate-800 rounded-xl shadow-lg md:flex md:justify-between w-[80vw] dark:text-[#FFFFFF]"
     >
-      <div className="md:h-full h-[400px] pt-8">
+      <div className="md:h-full h-[360px] pt-8">
         <img
           src={Amzat}
           alt="Amzat Sheriff"
@@ -25,7 +25,7 @@ const AboutMe = ({ theme }) => {
               Amzat Sheriff
             </h2>
             <p className="text-[#828282] dark:text-[#FFFFFF]">
-              Front-end Developer
+              Frontend Engineer · Product-focused
             </p>
           </div>
           <div>
@@ -53,15 +53,11 @@ const AboutMe = ({ theme }) => {
         </div>
         <div className="my-6 w-full">
           <p className="text-[#828282] dark:text-[#FFFFFF]">
-            Passionate Frontend developer with a proven track record of creating
-            stunning and responsive web experiences. I have honed my skills in
-            HTML, CSS, JavaScript, and various frontend frameworks, including
-            React and Vue. I excel at collaborating with cross-functional teams
-            to deliver innovative solutions that delight users and drive
-            business growth. Whether it's building from scratch or revamping
-            existing projects, I am always eager to take on new challenges and
-            bring my creativity to the table. Let's work together to create
-            something amazing!
+            I build scalable, performance-driven web interfaces for real-world
+            products. I specialize in turning complex requirements into
+            maintainable frontend systems, working closely with product, design,
+            and backend teams to ship features that improve user experience and
+            business outcomes.
           </p>
         </div>
         <div className="flex flex-wrap gap-4 md:justify-around md:gap-0">
