@@ -1,0 +1,285 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+ * Design tokens.
+ * Cool paper, near-black ink, a cobalt accent for links and actions, and a lime
+ * "highlighter" used sparingly behind ink text. Every text pair meets WCAG AA
+ * (4.5:1) against its background in both themes.
+ */
+:root {
+  color-scheme: light;
+  --paper: #f4f5f7;
+  --paper-raised: #ffffff;
+  --paper-sunk: #e9ebef;
+  --ink: #0c0e13;
+  --ink-2: #434855;
+  --ink-3: #5f6573;
+  --rule: #dcdfe5;
+  --accent: #2a3de8;
+  --accent-ink: #ffffff;
+  --accent-soft: #e3e6fd;
+  --mark: #cdf25a;
+  --mark-ink: #0c0e13;
+  --band: #0c0e13;
+  --band-ink: #f4f5f7;
+  --mark-stroke: #cdf25a;
+  --glow-a: rgb(42 61 232 / 0.10);
+  --glow-b: rgb(205 242 90 / 0.28);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #0b0c10;
+  --paper-raised: #14161c;
+  --paper-sunk: #1b1e26;
+  --ink: #eef0f4;
+  --ink-2: #b3b8c3;
+  --ink-3: #8c92a0;
+  --rule: #262a34;
+  --accent: #93a3ff;
+  --accent-ink: #0b0c10;
+  --accent-soft: #1d2342;
+  --mark: #cdf25a;
+  --mark-ink: #0c0e13;
+  --band: #1b1e26;
+  --band-ink: #eef0f4;
+  --mark-stroke: rgb(205 242 90 / 0.55);
+  --glow-a: rgb(147 163 255 / 0.12);
+  --glow-b: rgb(205 242 90 / 0.07);
+}
+
+/* No-JS fallback: follow the system theme when no explicit theme is set. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --paper: #0b0c10;
+    --paper-raised: #14161c;
+    --paper-sunk: #1b1e26;
+    --ink: #eef0f4;
+    --ink-2: #b3b8c3;
+    --ink-3: #8c92a0;
+    --rule: #262a34;
+    --accent: #93a3ff;
+    --accent-ink: #0b0c10;
+    --accent-soft: #1d2342;
+    --mark: #cdf25a;
+    --mark-ink: #0c0e13;
+    --band: #1b1e26;
+    --band-ink: #eef0f4;
+    --mark-stroke: rgb(205 242 90 / 0.55);
+    --glow-a: rgb(147 163 255 / 0.12);
+    --glow-b: rgb(205 242 90 / 0.07);
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-paper-sunk: var(--paper-sunk);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-mark: var(--mark);
+  --color-mark-ink: var(--mark-ink);
+  --color-band: var(--band);
+  --color-band-ink: var(--band-ink);
+
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
+
+  ::selection {
+    background: var(--mark);
+    color: var(--mark-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+@layer components {
+  /* Underline that draws in from the left on hover. */
+  .link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+    text-decoration-color: color-mix(in oklab, currentColor 40%, transparent);
+  }
+
+  .link:hover {
+    text-decoration-color: currentColor;
+  }
+
+  .link-quiet {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+  }
+
+  .link-quiet:hover,
+  .link-quiet:focus-visible {
+    background-size: 100% 1px;
+  }
+
+  /* Product-tinted panel; the tint is muted to the dark surface in dark mode. */
+  .tint {
+    background-color: var(--tint);
+  }
+
+  :root[data-theme="dark"] .tint {
+    background-color: color-mix(in oklab, var(--tint) 10%, var(--paper-raised));
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .tint {
+      background-color: color-mix(in oklab, var(--tint) 10%, var(--paper-raised));
+    }
+  }
+
+  /* Hero backdrop: two soft colour glows over a faint grid that fades out. */
+  .hero-backdrop {
+    background:
+      radial-gradient(40rem 26rem at 12% -10%, var(--glow-a), transparent 70%),
+      radial-gradient(34rem 24rem at 92% 8%, var(--glow-b), transparent 70%);
+  }
+
+  .hero-backdrop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--rule) 1px, transparent 1px),
+      linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+    background-size: 56px 56px;
+    opacity: 0.5;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
+    pointer-events: none;
+  }
+
+  /* Contact band: the same two glows, dimmed for a dark surface. */
+  .band-glow {
+    background-image:
+      radial-gradient(36rem 22rem at 100% 0%, rgb(42 61 232 / 0.35), transparent 70%),
+      radial-gradient(28rem 18rem at 0% 100%, rgb(205 242 90 / 0.12), transparent 70%);
+  }
+
+  /* Lime highlighter stroke behind a word or phrase. */
+  .mark {
+    background: linear-gradient(transparent 64%, var(--mark-stroke) 64%, var(--mark-stroke) 90%, transparent 90%);
+    padding-inline: 0.12em;
+    margin-inline: -0.06em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .link-quiet {
+      transition: background-size 280ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+  }
+}
+
+/*
+ * Motion. Pure CSS, scroll-driven where supported, and only when the user
+ * hasn't asked for reduced motion. Nothing is ever hidden behind JavaScript,
+ * and nothing animates opacity above the fold (that would delay LCP).
+ */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes settle {
+    from {
+      transform: translateY(8px);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  .enter {
+    animation: settle 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .enter-2 {
+    animation-delay: 80ms;
+  }
+
+  .enter-3 {
+    animation-delay: 160ms;
+  }
+
+  @keyframes lift {
+    from {
+      transform: translateY(24px);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  /* Scroll-driven reveals on large screens only: on phones the extra style
+     work during load cost more main-thread time than the motion was worth. */
+  @supports (animation-timeline: view()) {
+    @media (min-width: 1024px) {
+      .reveal {
+        animation: lift linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 45%;
+      }
+    }
+  }
+
+  @keyframes grow-x {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @supports (animation-timeline: scroll()) {
+    .reading-progress {
+      animation: grow-x linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress {
+    display: none;
+  }
+}
+
+@supports not (animation-timeline: scroll()) {
+  .reading-progress {
+    display: none;
+  }
+}
